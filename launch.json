@@ -1,0 +1,20 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "Why",
+    "name": "Why",
+    "symbol": "WHY",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "125270724187523965593206900"
+  },
+  "economics": {"poolBps":8800,"initialMarketCapWei":"2500000000000000000000","remainderTo":"0x3d99ca827fa972810b531f501c36796f838754ac"},
+  "notes": "Why is a fixed-supply ERC-20 with 18 decimals. Its argument-free constructor mints all 1,000,000,000 WHY to msg.sender once. It has no privileged roles, transfer fees, post-construction minting, burning, or upgrade mechanism. No application contracts or initialization calls are required. The pool uses a 0.3% fee and tick spacing 60. initialPrice is provenance only: floor(sqrt(initialMarketCapWei / totalSupply) * 2^96), assuming WHY is currency0 and the paired token is currency1, with both amounts in minor units. The deployer derives the opening price from economics.initialMarketCapWei and token.totalSupply using the actual currency ordering."
+}
